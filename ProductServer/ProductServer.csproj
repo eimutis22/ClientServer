@@ -238,6 +238,11 @@
       <DependentUpon>201803172025144_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ApplicationMigrations\Configuration.cs" />
+    <Compile Include="Migrations\ProductMigrations\201803172028117_Initial.cs" />
+    <Compile Include="Migrations\ProductMigrations\201803172028117_Initial.Designer.cs">
+      <DependentUpon>201803172028117_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ProductMigrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -256,6 +261,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Migrations\Commands.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -331,6 +337,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\ApplicationMigrations\201803172025144_Initial.resx">
       <DependentUpon>201803172025144_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ProductMigrations\201803172028117_Initial.resx">
+      <DependentUpon>201803172028117_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
