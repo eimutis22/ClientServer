@@ -3,3 +3,12 @@
 Update-Database -ConfigurationTypeName ProductServer.Migrations.ApplicationMigrations.Configuration
 
 Add-Migration -ConfigurationTypeName ProductServer.Migrations.ApplicationMigrations.Configuration
+
+
+***** STEPS *****
+- Add projects
+- References Added
+- Product Models Created
+- Enable-Migrations  -  Add-Migration  -  Update-Database  => DB Created
+- DAL - Interfaces Created
+- 
