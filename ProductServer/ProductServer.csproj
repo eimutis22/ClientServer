@@ -233,9 +233,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\ApplicationMigrations\201803172025144_Initial.cs" />
+    <Compile Include="Migrations\ApplicationMigrations\201803172025144_Initial.Designer.cs">
+      <DependentUpon>201803172025144_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ApplicationMigrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ProductModels\Product.cs" />
+    <Compile Include="Models\ProductModels\ProductDbContext.cs" />
+    <Compile Include="Models\ProductModels\Supplier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -313,6 +321,17 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonObjects\CommonObjects.csproj">
+      <Project>{dc54268a-0427-4fa4-8754-5b131b02c244}</Project>
+      <Name>CommonObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\ApplicationMigrations\201803172025144_Initial.resx">
+      <DependentUpon>201803172025144_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
