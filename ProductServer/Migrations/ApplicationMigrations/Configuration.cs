@@ -19,7 +19,7 @@ namespace ProductServer.Migrations.ApplicationMigrations
         protected override void Seed(ApplicationDbContext c)
         {
             // Seed_Users(c);
-            Create_Role(c);
+            // Create_Role(c);
         }
 
         private void Create_Role(ApplicationDbContext c)
@@ -35,16 +35,13 @@ namespace ProductServer.Migrations.ApplicationMigrations
             roleManager.Create(new IdentityRole { Name = "PurchasesManager" });
 
 
-
             ApplicationUser purchasesManager = manager.FindByEmail("flintstone.fred@itsligo.ie");
+
             if (purchasesManager != null)
-            {
                 manager.AddToRoles(purchasesManager.Id, new string[] { "PurchasesManager" });
-            }
-            else
-            {
+            else 
                 throw new Exception { Source = "Did not find user" };
-            }
+
         }
 
         private void Seed_Users(ApplicationDbContext c)
