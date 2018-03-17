@@ -1,5 +1,6 @@
 namespace ProductServer.Migrations.ApplicationMigrations
 {
+    using ProductServer.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -13,20 +14,23 @@ namespace ProductServer.Migrations.ApplicationMigrations
             MigrationsDirectory = @"Migrations\ApplicationMigrations";
         }
 
-        protected override void Seed(ProductServer.Models.ApplicationDbContext context)
+        protected override void Seed(ApplicationDbContext context)
+        {
+            Seed_Users(context);
+        }
+
+        private void Seed_Users(ApplicationDbContext c)
         {
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            
+            c.Users.AddOrUpdate(
+              p => p.Id,
+              new ApplicationUser { UserName = "fflyntstone", Email= "flintstone.fred@itsligo.ie", PasswordHash= "Flint$12345" }
+            );
+
         }
     }
 }

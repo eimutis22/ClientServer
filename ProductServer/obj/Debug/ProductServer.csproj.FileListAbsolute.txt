@@ -82,3 +82,4 @@ C:\Users\Eimutis\Documents\Github\ClientServer\ClientServer\ProductServer\obj\De
 C:\Users\Eimutis\Documents\Github\ClientServer\ClientServer\ProductServer\obj\Debug\ProductServer.Migrations.ApplicationMigrations.Initial.resources
 C:\Users\Eimutis\Documents\Github\ClientServer\ClientServer\ProductServer\obj\Debug\ProductServer.csproj.GenerateResource.Cache
 C:\Users\Eimutis\Documents\Github\ClientServer\ClientServer\ProductServer\obj\Debug\ProductServer.Migrations.ProductMigrations.Initial.resources
+C:\Users\Eimutis\Documents\Github\ClientServer\ClientServer\ProductServer\obj\Debug\ProductServer.Migrations.ProductMigrations.FixDatatype.resources

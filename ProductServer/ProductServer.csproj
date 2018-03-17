@@ -230,6 +230,10 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DAL\IProductRepository.cs" />
+    <Compile Include="DAL\IRepository.cs" />
+    <Compile Include="DAL\ISupplierRepository.cs" />
+    <Compile Include="DAL\SupplierProductRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -241,6 +245,10 @@
     <Compile Include="Migrations\ProductMigrations\201803172028117_Initial.cs" />
     <Compile Include="Migrations\ProductMigrations\201803172028117_Initial.Designer.cs">
       <DependentUpon>201803172028117_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ProductMigrations\201803172055294_Fix Datatype.cs" />
+    <Compile Include="Migrations\ProductMigrations\201803172055294_Fix Datatype.Designer.cs">
+      <DependentUpon>201803172055294_Fix Datatype.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ProductMigrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -340,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\ProductMigrations\201803172028117_Initial.resx">
       <DependentUpon>201803172028117_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ProductMigrations\201803172055294_Fix Datatype.resx">
+      <DependentUpon>201803172055294_Fix Datatype.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
