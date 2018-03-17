@@ -1,0 +1,5 @@
+﻿Enable-Migrations -ContextTypeName ProductServer.Models.ApplicationDbContext -MigrationsDirectory Migrations\ApplicationMigrations
+
+Update-Database -ConfigurationTypeName ProductServer.Migrations.ApplicationMigrations.Configuration
+
+Add-Migration -ConfigurationTypeName ProductServer.Migrations.ApplicationMigrations.Configuration
